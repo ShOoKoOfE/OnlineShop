@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="project.ui.activity.HomeActivity">
+
+  <FrameLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+  </FrameLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:id="@+id/footer"
+      style="@android:style/ButtonBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:onClick="chooseFragment"
+        android:tag="Home"
+        app:srcCompat="@drawable/ic_home"/>
+
+      <ImageButton
+        android:id="@+id/btnCategoryList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:onClick="chooseFragment"
+        android:tag="List"
+        app:srcCompat="@drawable/ic_list"/>
+
+      <ImageButton
+        android:id="@+id/btnShoppingbasket"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:onClick="chooseFragment"
+        android:tag="Basket"
+        app:srcCompat="@drawable/ic_basket"/>
+
+      <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:onClick="chooseFragment"
+        android:tag="Profile"
+        app:srcCompat="@drawable/ic_profile"/>
+
+      <ImageButton
+        android:id="@+id/btnContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:onClick="chooseFragment"
+        android:tag="Contact"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/ic_contact"/>
+    </LinearLayout>
+  </LinearLayout>
+
+
+</LinearLayout>

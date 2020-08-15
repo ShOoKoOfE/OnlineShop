@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="project.ui.activity.HomeActivity">
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="50dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="سبد خرید شما خالی است."
+      android:textSize="18dp"/>
+
+    <LinearLayout
+      android:id="@+id/linearFactor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/gray_backborder"
+      android:orientation="horizontal"
+      android:padding="10dp">
+
+      <TextView
+        android:id="@+id/txtHistory"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="مشاهده سوابق سفارشات"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+      <ImageButton
+        android:id="@+id/btnHistory"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:gravity="center"
+        app:srcCompat="@drawable/ic_history"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

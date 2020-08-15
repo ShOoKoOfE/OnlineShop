@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:orientation="vertical"
+  tools:context="project.ui.activity.HomeActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="5dp"
+      android:layout_marginTop="5dp"
+      android:layout_weight="1"
+      android:background="@drawable/lightgray_backborder"
+      android:orientation="horizontal"
+      android:padding="10dp">
+
+      <ImageButton
+        android:id="@+id/imgSpinnerFactor"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_arrow_drop"/>
+
+      <TextView
+        android:id="@+id/txtFactorPrice"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:padding="2dp"
+        android:textSize="14dip">
+      </TextView>
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/txtFactorNum"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical|start"
+          android:padding="2dp"
+          android:text="Factor Number"
+          android:textAlignment="center"
+          android:textColor="#000000"/>
+
+        <TextView
+          android:id="@+id/txtFactorDate"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical|start"
+          android:padding="2dp"
+          android:text="Factor Date"
+          android:textAlignment="center"
+          android:textColor="#000000"
+          android:textSize="10dip"/>
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/linearFactorDetails"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="0dp"
+      android:layout_weight="1"
+      android:animateLayoutChanges="true"
+      android:visibility="gone">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstFactorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbars="horizontal"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

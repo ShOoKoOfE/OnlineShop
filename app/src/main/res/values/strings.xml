@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">آنلاین شاپ</string>
+    <string name="home">خانه</string>
+    <string name="list">دسته بندی</string>
+    <string name="basket">سبد خرید</string>
+    <string name="profile">پروفایل</string>
+    <string name="contact">تماس با ما</string>
+    <string name="toman">تومان</string>
+    <string name="dialog_ok">انتخاب</string>
+    <string name="dialog_cancel">بستن</string>
+    <string name="not_exists">ناموجود</string>
+    <string name="search">جستجو</string>
+    <string name="DESC">قيمت زياد به کم</string>
+    <string name="ASC">قيمت کم به زياد</string>
+    <string name="account_warning">لطفا ابتدا وارد اکانت خود شوید.</string>
+    <string name="warning">توجه</string>
+    <string name="permission_warning">اجرای برنامه نیازمند دسترسی به حافظه خارجی می باشد.</string>
+    <string name="create_permission">ایجاد مجوز</string>
+    <string name="close_app">لغو اجرای برنامه</string>
+    <string name="action_settings">تنظیمان</string>
+    <string name="categories">دسته بندی ها</string>
+    <string name="date">تاریخ</string>
+    <string name="warninig_login">نام کاربری یا کلمه عبور اشتباه است.</string>
+    <string name="factor_history">سوابق سفارش</string>
+    <string name="favourite">لیست مورد علاقه</string>
+    <string name="mainslider01">صرفه جویی در زمان</string>
+    <string name="mainslider02">دربرگیرنده همه سلیقه ها</string>
+    <string name="mainslider03">امکان مقایسه کالاها</string>
+    <string name="mainslider04">خرید آسان و راحت</string>
+    <string name="entrance">ورود</string>
+    <string name="register">عضویت</string>
+    <string name="creat_account">ورود به آنلاین شاپ</string>
+    <string name="warning_username">نام کاربری تکراری می باشد.</string>
+    <string name="connectivity_noConnection">اتصال با سرور برقرار نشد.</string>
+    <string name="username_error">لطفا نام کاربری را وارد کنید.</string>
+    <string name="password_error">لطفا نام پسورد را وارد کنید.</string>
+    <string name="progress_message">در حال انجام عملیات ...</string>
+    <string name="email_error">لطفا آدرس پست الکتریکی خود را با فرمت صحیح وارد نمایید.</string>
+    <string name="mobile_error">لطفا شماره همراه خود را وارد نمایید.</string>
+
+    <string-array name="sort_array">
+        <item>قيمت زياد به کم</item>
+        <item>قيمت کم به زياد</item>
+    </string-array>
+
+
+</resources>

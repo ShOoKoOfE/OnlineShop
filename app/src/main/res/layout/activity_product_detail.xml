@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="project.ui.activity.ProductDetailActivity">
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+          android:id="@+id/pager_product"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true">
+        </androidx.viewpager.widget.ViewPager>
+
+        <project.controls.PageIndicator
+          android:id="@+id/indicator_produc"
+          android:layout_width="fill_parent"
+          android:layout_height="40dip"
+          android:layout_alignParentBottom="true"/>
+
+      </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1.5"
+      android:background="@drawable/gray_all_border"
+      android:orientation="vertical"
+      android:padding="20dp">
+
+      <TextView
+        android:id="@+id/txtProductDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Product Detail Name"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textDirection="rtl"
+        android:textSize="14dip"/>
+
+      <TextView
+        android:id="@+id/txtProductDetailCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Product Detail Code"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textDirection="rtl"
+        android:textSize="14dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="10dp">
+
+      <ImageButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/ic_favorite"/>
+
+      <RatingBar
+        android:id="@+id/rateProductDetail"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:progressTint="#ef394f"
+        android:stepSize="0.1"
+        tools:targetApi="lollipop"/>
+
+      <ImageButton
+        android:id="@+id/btnNotification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/ic_notifications"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/linearAddBasket"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/lightgray_backborder"
+      android:gravity="bottom"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/btnAddBasket"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="#3f3f3f3f"
+        android:text="0 تومان"/>
+
+      <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#3f3f3f3f"
+        app:srcCompat="@drawable/ic_add_shopping"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
